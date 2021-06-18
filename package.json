@@ -1,7 +1,7 @@
 {
     "name": "bevy-snippets",
     "displayName": "Bevy Snippets",
-    "description": "Useful snippets for Bevy.",
+    "description": "Useful snippets for Bevy",
     "version": "1.0.0",
     "keywords": ["bevy", "rust", "bevy engine", "gamedev"],
     "publisher": "pixl",
