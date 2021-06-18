@@ -5,6 +5,10 @@
     "version": "1.0.0",
     "keywords": ["bevy", "rust", "bevy engine", "gamedev"],
     "publisher": "pixl",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/pixldev/bevy-snippets.git"
+    },
     "engines": {
         "vscode": "^1.57.0"
     },
