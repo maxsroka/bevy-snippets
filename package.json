@@ -1,0 +1,22 @@
+{
+    "name": "bevy-snippets",
+    "displayName": "Bevy Snippets",
+    "description": "Useful snippets for Bevy.",
+    "version": "1.0.0",
+    "keywords": ["bevy", "rust", "bevy engine", "gamedev"],
+    "publisher": "pixl",
+    "engines": {
+        "vscode": "^1.57.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "rust",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}

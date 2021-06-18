@@ -1,0 +1,42 @@
+{
+    "Query Param": {
+        "prefix": "query",
+        "body": "${1:query}: Query<${0}>",
+    },
+    "Mutable Query Param": {
+        "prefix": "query mut",
+        "body": "mut ${1:query}: Query<${0}>",
+    },
+    "QuerySet Param": {
+        "prefix": "query set",
+        "body": "${1:query}: QuerySet<(Query<${2}>, Query<${0}>)>"
+    },
+    "Mutable QuerySet Param": {
+        "prefix": "query set mut",
+        "body": "mut ${1:query}: QuerySet<(Query<${2}>, Query<${0}>)>"
+    },
+    "Commands Param": {
+        "prefix": "commands",
+        "body": "mut ${0:commands}: Commands",
+    },
+    "Res Param": {
+        "prefix": "res",
+        "body": "${1:res}: Res<${0}>",
+    },
+    "ResMut Param": {
+        "prefix": "res mut",
+        "body": "mut ${1:res}: ResMut<${0}>",
+    },
+    "EventWriter Param": {
+        "prefix": "event writer",
+        "body": "mut ${1:events}: EventWriter<${0}>",
+    },
+    "EventReader Param": {
+        "prefix": "event reader",
+        "body": "mut ${1:events}: EventReader<${0}>",
+    },
+    "Local Param": {
+        "prefix": "local",
+        "body": "mut ${1:local}: Local<${0}>",
+    }
+}
