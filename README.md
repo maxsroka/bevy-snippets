@@ -12,3 +12,4 @@
 * EventWriter
 * EventReader
 * Local
+* App Template
