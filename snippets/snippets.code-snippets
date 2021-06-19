@@ -38,5 +38,17 @@
     "Local Param": {
         "prefix": "local",
         "body": "mut ${1:local}: Local<${0}>",
+    },
+    "App Template": {
+        "prefix": "app",
+        "body": [
+            "use bevy::prelude::*;",
+            "",
+            "fn main() {",
+            "   App::build()",
+            "       .add_plugins(DefaultPlugins)${0}",
+            "       .run();",
+            "}",
+        ]
     }
 }
