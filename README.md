@@ -13,3 +13,4 @@
 * EventReader
 * Local
 * App Template
+* Component
