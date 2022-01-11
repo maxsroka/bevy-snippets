@@ -45,10 +45,17 @@
             "use bevy::prelude::*;",
             "",
             "fn main() {",
-            "   App::build()",
+            "   App::new()",
             "       .add_plugins(DefaultPlugins)${0}",
             "       .run();",
             "}",
         ]
+    },
+    "Component": {
+        "prefix": "component",
+        "body": [
+            "#[derive(Component)]",
+            "struct ${0}"
+        ],
     }
 }
