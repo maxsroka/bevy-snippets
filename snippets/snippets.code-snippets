@@ -49,5 +49,14 @@
             "#[derive(Component)]",
             "struct ${0}"
         ],
+    },
+    "Resource Struct": {
+        "prefix": "resource",
+        "body": [
+            "#[derive(Resource)]",
+            "struct ${1} {",
+            "\t${0}",
+            "}",
+        ],
     }
 }
