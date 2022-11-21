@@ -43,11 +43,13 @@
             "}",
         ]
     },
-    "Component": {
+    "Component Struct": {
         "prefix": "component",
         "body": [
             "#[derive(Component)]",
-            "struct ${0}"
+            "struct ${1} {",
+            "\t${0}",
+            "}"
         ],
     },
     "Resource Struct": {
