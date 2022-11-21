@@ -7,14 +7,6 @@
         "prefix": "query mut",
         "body": "mut ${1:query}: Query<${0}>",
     },
-    "QuerySet Param": {
-        "prefix": "query set",
-        "body": "${1:query}: QuerySet<(Query<${2}>, Query<${0}>)>"
-    },
-    "Mutable QuerySet Param": {
-        "prefix": "query set mut",
-        "body": "mut ${1:query}: QuerySet<(Query<${2}>, Query<${0}>)>"
-    },
     "Commands Param": {
         "prefix": "commands",
         "body": "mut ${0:commands}: Commands",
