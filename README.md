@@ -2,15 +2,18 @@
 [Visual Studio Code](https://code.visualstudio.com/) extension that adds snippets for the [Bevy Engine](https://bevyengine.org/).
 
 ## Snippets
-* Query
-* Mutable Query
-* QuerySet
-* Mutable QuerySet
-* Commands
-* Res
-* ResMut
-* EventWriter
-* EventReader
-* Local
-* App Template
-* Component
+* ### Parameters
+    - `query`
+    - `query mut`
+    - `commands`
+    - `res`
+    - `res mut`
+    - `event writer`
+    - `event reader`
+    - `local`
+* ### Templates
+    - `app`
+    - `plugin`
+* ### Structs
+    - `component`
+    - `resource`
