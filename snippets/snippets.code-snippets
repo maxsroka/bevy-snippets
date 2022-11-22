@@ -50,7 +50,7 @@
             "",
             "impl Plugin for ${1} {",
             "\tfn build(&self, app: &mut App) {",
-            "\t\tapp.${0}",
+            "\t\t${0}",
             "\t}",
             "}",
         ]
