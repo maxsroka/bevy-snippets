@@ -7,14 +7,6 @@
         "prefix": "query mut",
         "body": "mut ${1:query}: Query<${0}>",
     },
-    "QuerySet Param": {
-        "prefix": "query set",
-        "body": "${1:query}: QuerySet<(Query<${2}>, Query<${0}>)>"
-    },
-    "Mutable QuerySet Param": {
-        "prefix": "query set mut",
-        "body": "mut ${1:query}: QuerySet<(Query<${2}>, Query<${0}>)>"
-    },
     "Commands Param": {
         "prefix": "commands",
         "body": "mut ${0:commands}: Commands",
@@ -51,11 +43,30 @@
             "}",
         ]
     },
-    "Component": {
+    "Plugin Template": {
+        "prefix": "plugin",
+        "body": [
+            "pub struct ${1};",
+            "",
+            "impl Plugin for ${1} {",
+            "\tfn build(&self, app: &mut App) {",
+            "\t\t${0}",
+            "\t}",
+            "}",
+        ]
+    },
+    "Component Struct": {
         "prefix": "component",
         "body": [
             "#[derive(Component)]",
-            "struct ${0}"
+            "struct ${0}",
+        ],
+    },
+    "Resource Struct": {
+        "prefix": "resource",
+        "body": [
+            "#[derive(Resource)]",
+            "struct ${0}",
         ],
     }
 }
