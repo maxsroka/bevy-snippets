@@ -43,6 +43,18 @@
             "}",
         ]
     },
+    "Plugin Template": {
+        "prefix": "plugin",
+        "body": [
+            "pub struct ${1};",
+            "",
+            "impl Plugin for ${1} {",
+            "\tfn build(&self, app: &mut App) {",
+            "\t\tapp.${0}",
+            "\t}",
+            "}",
+        ]
+    },
     "Component Struct": {
         "prefix": "component",
         "body": [
