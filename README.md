@@ -1,5 +1,7 @@
-# Bevy Snippets
-[Visual Studio Code](https://code.visualstudio.com/) extension that adds snippets for the [Bevy Engine](https://bevyengine.org/).
+<div align="center">
+<h1>Bevy Snippets</h1>
+<a href="https://code.visualstudio.com/">Visual Studio Code</a> extension that adds snippets for the <a href="https://bevyengine.org/">Bevy Engine</a>.
+</div>
 
 ## Snippets
 * ### Parameters
