@@ -1,72 +1,91 @@
 {
-    "Query Param": {
-        "prefix": "query",
-        "body": "${1:query}: Query<${0}>",
-    },
-    "Mutable Query Param": {
-        "prefix": "query mut",
-        "body": "mut ${1:query}: Query<${0}>",
-    },
-    "Commands Param": {
-        "prefix": "commands",
-        "body": "mut ${0:commands}: Commands",
-    },
-    "Res Param": {
-        "prefix": "res",
-        "body": "${1:res}: Res<${0}>",
-    },
-    "ResMut Param": {
-        "prefix": "res mut",
-        "body": "mut ${1:res}: ResMut<${0}>",
-    },
-    "EventWriter Param": {
-        "prefix": "event writer",
-        "body": "mut ${1:events}: EventWriter<${0}>",
-    },
-    "EventReader Param": {
-        "prefix": "event reader",
-        "body": "mut ${1:events}: EventReader<${0}>",
-    },
-    "Local Param": {
-        "prefix": "local",
-        "body": "mut ${1:local}: Local<${0}>",
-    },
-    "App Template": {
-        "prefix": "app",
-        "body": [
-            "use bevy::prelude::*;",
-            "",
-            "fn main() {",
-            "   App::new()",
-            "       .add_plugins(DefaultPlugins)${0}",
-            "       .run();",
-            "}",
-        ]
-    },
-    "Plugin Template": {
-        "prefix": "plugin",
-        "body": [
-            "pub struct ${1};",
-            "",
-            "impl Plugin for ${1} {",
-            "\tfn build(&self, app: &mut App) {",
-            "\t\t${0}",
-            "\t}",
-            "}",
-        ]
-    },
-    "Component Struct": {
-        "prefix": "component",
-        "body": [
-            "#[derive(Component)]",
-            "struct ${0}",
-        ],
-    },
-    "Resource Struct": {
-        "prefix": "resource",
-        "body": [
-            "#[derive(Resource)]",
-            "struct ${0}",
-        ],
-    }
+  "Query Param": {
+    "prefix": "query",
+    "body": "${1:query}: Query<${0}>"
+  },
+  "Mutable Query Param": {
+    "prefix": "query mut",
+    "body": "mut ${1:query}: Query<${0}>"
+  },
+  "Commands Param": {
+    "prefix": "commands",
+    "body": "mut ${0:commands}: Commands"
+  },
+  "Res Param": {
+    "prefix": "res",
+    "body": "${1:res}: Res<${0}>"
+  },
+  "ResMut Param": {
+    "prefix": "res mut",
+    "body": "mut ${1:res}: ResMut<${0}>"
+  },
+  "EventWriter Param": {
+    "prefix": "event writer",
+    "body": "mut ${1:events}: EventWriter<${0}>"
+  },
+  "EventReader Param": {
+    "prefix": "event reader",
+    "body": "mut ${1:events}: EventReader<${0}>"
+  },
+  "Local Param": {
+    "prefix": "local",
+    "body": "mut ${1:local}: Local<${0}>"
+  },
+  "App Template": {
+    "prefix": "app",
+    "body": [
+      "use bevy::prelude::*;",
+      "",
+      "fn main() {",
+      "   App::new()",
+      "       .add_plugins(DefaultPlugins)${0}",
+      "       .run();",
+      "}"
+    ]
+  },
+  "Plugin Template": {
+    "prefix": "plugin",
+    "body": [
+      "pub struct ${1};",
+      "",
+      "impl Plugin for ${1} {",
+      "\tfn build(&self, app: &mut App) {",
+      "\t\t${0}",
+      "\t}",
+      "}"
+    ]
+  },
+  "Component Struct": {
+    "prefix": "component",
+    "body": ["#[derive(Component)]", "struct ${0}"]
+  },
+  "Resource Struct": {
+    "prefix": "resource",
+    "body": ["#[derive(Resource)]", "struct ${0}"]
+  },
+  "SystemSet Struct": {
+    "prefix": "systemset",
+    "body": [
+      "#[derive(Debug, Hash, PartialEq, Eq, Clone, SystemSet)]",
+      "struct ${0};"
+    ]
+  },
+  "SystemSet Base Struct": {
+    "prefix": "systemset base",
+    "body": [
+      "#[derive(Debug, Hash, PartialEq, Eq, Clone, SystemSet)]",
+      "#[system_set(base)]",
+      "struct ${0};"
+    ]
+  },
+  "State Enum": {
+    "prefix": "state",
+    "body": [
+      "#[derive(Debug, Clone, Copy, Default, Eq, PartialEq, Hash, States)]",
+      "enum ${1} {",
+      "\t#[default]",
+      "\t${0},",
+      "}"
+    ]
+  }
 }
