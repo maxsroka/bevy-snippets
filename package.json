@@ -1,19 +1,18 @@
 {
-  "name": "bevy-snippets",
+  "name": "bevy-snippets-rendaoer",
   "icon": "BevySnippets.png",
-  "displayName": "Bevy Snippets",
-  "description": "Useful snippets for Bevy",
-  "version": "3.1.0",
+  "displayName": "Bevy-Snippets",
+  "description": "Useful snippets for Bevy by Sequel",
+  "version": "0.10.0",
   "keywords": [
-    "bevy",
     "rust",
-    "bevy engine",
-    "gamedev"
+    "bevy",
+    "bevy engine"
   ],
-  "publisher": "pixl",
+  "publisher": "rendaoer",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pixldev/bevy-snippets.git"
+    "url": "https://github.com/rendaoer/bevy-snippets.git"
   },
   "engines": {
     "vscode": "^1.57.0"
