@@ -33,6 +33,7 @@
     },
     "Exclusive System Template": {
         "prefix": "exclusive system",
+        "description": "Exclusive systems run on the main thread and have mutable (exclusive) access to the ECS world.",
         "body": [
             "fn ${1:exclusive_system}(world: &mut World) {",
             "\t${0}",
