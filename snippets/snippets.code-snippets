@@ -32,9 +32,9 @@
         "body": "mut ${1:local}: Local<${0}>",
     },
     "Exclusive System Template": {
-        "prefix": "world",
+        "prefix": "exclusive system",
         "body": [
-            "fn ${1}(world: &mut World) {",
+            "fn ${1:exclusive_system}(world: &mut World) {",
             "\t${0}",
             "}"
         ]
