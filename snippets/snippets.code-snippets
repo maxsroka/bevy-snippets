@@ -74,7 +74,7 @@
         "body": [
             "#[derive(Bundle)]",
             "struct $1 {",
-            "    $0",
+            "\t$0",
             "}"
         ]
     }
