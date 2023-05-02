@@ -31,6 +31,14 @@
         "prefix": "local",
         "body": "mut ${1:local}: Local<${0}>",
     },
+    "Exclusive System Template": {
+        "prefix": "world",
+        "body": [
+            "fn ${1}(world: &mut World) {",
+            "\t${0}",
+            "}"
+        ]
+    },
     "App Template": {
         "prefix": "app",
         "body": [
