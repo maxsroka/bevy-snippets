@@ -16,6 +16,7 @@
 * ### Templates
     - `app`
     - `plugin`
+    - `exclusive system`
 * ### Structs
     - `component`
     - `resource`
