@@ -31,6 +31,10 @@
         "prefix": "local",
         "body": "mut ${1:local}: Local<${0}>",
     },
+    "State Param": {
+        "prefix": "state",
+        "body": "${1:state}: Res<State<${0}>>",
+    },
     "Next State Param": {
         "prefix": "next state",
         "body": "mut ${1:next_state}: ResMut<NextState<${0}>>"
