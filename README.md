@@ -17,6 +17,7 @@
     - `app`
     - `plugin`
     - `exclusive system`
+    - `states`
 * ### Structs
     - `component`
     - `resource`

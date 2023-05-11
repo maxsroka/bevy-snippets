@@ -64,6 +64,16 @@
             "}",
         ]
     },
+    "States Template": {
+        "prefix": "states",
+        "body": [
+            "#[derive(States, Default, Debug, PartialEq, Eq, Hash, Clone)]",
+            "enum ${1} {",
+            "\t#[default]",
+            "\t${0}",
+            "}",
+        ]
+    },
     "Component Struct": {
         "prefix": "component",
         "body": [
