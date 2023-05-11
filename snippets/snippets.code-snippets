@@ -31,6 +31,10 @@
         "prefix": "local",
         "body": "mut ${1:local}: Local<${0}>",
     },
+    "Next State Param": {
+        "prefix": "next state",
+        "body": "mut ${1:next_state}: ResMut<NextState<${0}>>"
+    },
     "Exclusive System Template": {
         "prefix": "exclusive system",
         "description": "Exclusive systems run on the main thread and have mutable (exclusive) access to the ECS world.",

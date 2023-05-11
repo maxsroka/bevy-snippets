@@ -13,6 +13,7 @@
     - `event writer`
     - `event reader`
     - `local`
+    - `next state`
 * ### Templates
     - `app`
     - `plugin`
