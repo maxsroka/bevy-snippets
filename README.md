@@ -19,3 +19,4 @@
 * ### Structs
     - `component`
     - `resource`
+    - `bundle`

@@ -68,5 +68,14 @@
             "#[derive(Resource)]",
             "struct ${0}",
         ],
+    },
+    "Bundle Struct": {
+        "prefix": "bundle",
+        "body": [
+            "#[derive(Bundle)]",
+            "struct ${1} {",
+            "\t${0}",
+            "}",
+        ]
     }
 }
