@@ -1,5 +1,6 @@
 {
     "name": "bevy-snippets",
+    "icon": "BevySnippets.png",
     "displayName": "Bevy Snippets",
     "description": "Useful snippets for Bevy",
     "version": "4.0.0",

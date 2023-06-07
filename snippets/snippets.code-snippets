@@ -86,5 +86,24 @@
             "\t${0}",
             "}",
         ]
+    },
+    "System Set": {
+      "prefix": "system set",
+      "body": [
+        "#[derive(SystemSet, Debug, Hash, PartialEq, Eq, Clone)]",
+        "enum ${1} {",
+        "\t${0},",
+        "}"
+      ]
+    },
+    "System Base Set": {
+      "prefix": "systembase set",
+      "body": [
+        "#[derive(SystemSet, Debug, Hash, PartialEq, Eq, Clone)]",
+        "#[system_set(base)]",
+        "enum ${1} {",
+        "\t${0},",
+        "}"
+      ]
     }
 }
