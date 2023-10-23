@@ -2,7 +2,7 @@
     "name": "bevy-snippets",
     "displayName": "Bevy Snippets",
     "description": "Useful snippets for Bevy",
-    "version": "4.0.0",
+    "version": "4.0.1",
     "keywords": [
         "bevy",
         "rust",
